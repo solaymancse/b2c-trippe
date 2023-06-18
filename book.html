@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Booking Page</title>
+</head>
+
+<body>
+    <div class="nav_pc_nor">
+
+        <div class="logo-div">
+            <img src="./assets/logo.png" alt="">
+        </div>
+        <div class="nav-item">
+            <div class="search-bar">
+                <img src="./assets/search-icon.png" alt="">
+            </div>
+            <div class="language">
+                <img src="./assets/Vector.png" alt="">
+                <h2 class="mb-0">English</h2>
+            </div>
+            <div class="currency">
+                <img src="./assets/currency.png" alt="">
+                <h2 class="mb-0">AED</h2>
+            </div>
+            <div class="contact">
+                <h2 class="mb-0">Contact Us</h2>
+            </div>
+            <div class="toggle">
+                <img src="./assets/toggle.png" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="header mt-4">
+        <h1 class="text-center">Disneyland rheme park ticket ticket ickea</h1>
+    </div>
+
+    <div class="container-div booking-body mt-4">
+        <div class="booking-left">
+            <div class="booking-top-left">
+                <h1>Select Your Option</h1>
+                <div class="option-select">
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <p class="mb-0">Burj Khalifa</p>
+                    </div>
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <p class="mb-0">Burj Al Arab</p>
+                    </div>
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <p class="mb-0">Yas Waterworld</p>
+                    </div>
+                </div>
+            </div>
+            <div class="selected-dates">
+                <h1>Select Dates</h1>
+                <div class="date-select">
+                    <div class="date-content">
+                        <p class="mb-0">14 Jun</p>
+                        <p class="mb-0">Today</p>
+                    </div>
+                    <div class="date-content">
+                        <p class="mb-0">14 Jun</p>
+                        <p class="mb-0">Today</p>
+                    </div>
+                    <div class="date-content">
+                        <p class="mb-0">14 Jun</p>
+                        <p class="mb-0">Today</p>
+                    </div>
+                    <div class="date-content">
+                        <p class="mb-0">14 Jun</p>
+                        <p class="mb-0">Today</p>
+                    </div>
+                    <div class="date-content">
+                        <p class="mb-0">14 Jun</p>
+                        <p class="mb-0">Today</p>
+                    </div>
+                    <div class="date-content">
+                        <p class="mb-0">14 Jun</p>
+                        <p class="mb-0">Today</p>
+                    </div>
+                    <div class="date-content" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
+                            src="./assets/calendar (1).png" alt=""></div>
+                </div>
+            </div>
+            <div class="select-time-slots">
+                <h1>Select Time Slots</h1>
+                <div class="time-slots">
+                    <div class="times active">
+                        <p class="mb-0">09.00 AM</p>
+                    </div>
+                    <div class="times">
+                        <p class="mb-0">09.00 AM</p>
+                    </div>
+                    <div class="times">
+                        <p class="mb-0">09.00 AM</p>
+                    </div>
+                    <div class="times">
+                        <p class="mb-0">09.00 AM</p>
+                    </div>
+                </div>
+                <div class="time-slots">
+                    <div class="times">
+                        <p class="mb-0">09.00 AM</p>
+                    </div>
+                    <div class="times">
+                        <p class="mb-0">09.00 AM</p>
+                    </div>
+                    <div class="times">
+                        <p class="mb-0">09.00 AM</p>
+                    </div>
+                    <div class="times">
+                        <p class="mb-0">09.00 AM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="more-times-slots">
+                <h1 class="mb-0">More Time Slots </h1>
+                <img src="./assets/arrow.png" alt="">
+            </div>
+            <div class="participents">
+                <h1>Select Nuber of Participants</h1>
+                <div class="adults">
+                    <div>
+                        <h3>Adult (18+)</h3>
+                        <p data-bs-toggle="modal" data-bs-target="#exampleModal1">Important Notes</p>
+                    </div>
+                    <div class="number-count">
+                        <p>AED 169</p>
+                        <div class="tity-price">
+                            <img src="./assets/minus-sign.png" alt="">
+                            <p class="mb-0">1</p>
+                            <img src="./assets/plus (1).png" alt="">
+                         </div>
+                    </div>
+                </div>
+                <div class="adults">
+                    <div>
+                        <h3>Child (4-12 Years old)</h3>
+                        <p data-bs-toggle="modal" data-bs-target="#exampleModal1">Important Notes</p>
+                    </div>
+                    <div class="number-count">
+                        <p>AED 169</p>
+                        <div class="tity-price">
+                            <img src="./assets/minus-sign.png" alt="">
+                            <p class="mb-0">1</p>
+                            <img src="./assets/plus (1).png" alt="">
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="booking-right">
+            <div class="book-now">
+                <div class="top">
+                    <p class="top-head">Total</p>
+                    <div class="price">
+                        <span class="color-danger">AED <p>600.00</p> </span> <strike>AED 100.00</strike>
+                    </div>
+                    <div>
+                        <a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5" >NEXT</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h3>Why Trippe ?</h3>
+                    <div class="why">
+                        <img src="./assets/tik.png" alt="">
+                        <div class="why-content">
+                            <h4>Secure Checkout</h4>
+                            <p>Safe and Secure
+                                Encrypted Payments & Privacy Protected</p>
+                        </div>
+                    </div>
+                    <div class="why">
+                        <img src="./assets/tik.png" alt="">
+                        <div class="why-content">
+                            <h4>Satisfaction Guaranteed</h4>
+                            <p>Our customer support team has more than 1,000+ verified reviews with a 95% excellent
+                                score</p>
+                        </div>
+                    </div>
+                    <div class="why">
+                        <img src="./assets/tik.png" alt="">
+                        <div class="why-content">
+                            <h4>Last Minute Availability</h4>
+                            <p>Beat the last-minute rush,skip long lines by reserving your spot in advance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="footer">
+        <div>
+            <img src="./assets/logo.png" alt="">
+        </div>
+        <div class="footer-content">
+
+
+            <div>
+                <h2>About</h2>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div>
+                <h2>Contact Info</h2>
+                <p>support@tripppe.com</p>
+            </div>
+            <div>
+                <h2>GUARANTEED SECURE BOOKING</h2>
+                <img src="./assets/1 3.png" alt="">
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Dates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5">
+                    <svg width="100%" height="600" preserveAspectRatio="xMinYMin meet"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg>
+                            <rect x="10" y="10" height="377" width="640" style="fill: #fff;" />
+                            <rect x="30" y="70" rx="5" ry="5" height="33" width="600" style="fill: #28ACE2" />
+                            <text id="month_name" x="300" y="50" fill="#f6861f"
+                                style="font-size:22px; font-family: Arial; font-weight:bold;"></text>
+                            <rect x="45" y="159" rx="5" ry="5" height="33" width="40" style="fill: #28ACE2" />
+                            <svg x="10" y="70">
+                                <g>
+                                    <text x="35" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">MON</text>
+                                    <text x="126" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">TUE</text>
+                                    <text x="216" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">WED</text>
+                                    <text x="304" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">THU</text>
+                                    <text x="396" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">FRI</text>
+                                    <text x="473" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">SAT</text>
+                                    <text x="560" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">SUN</text>
+                                </g>
+                            </svg>
+                            <svg x="10" y="120">
+                                <g>
+                                    <text x="49" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+                                    <text x="141" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+                                    <text x="230" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">1</text>
+                                    <text x="317" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">2</text>
+                                    <text x="405" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">3</text>
+                                    <text x="482" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">4</text>
+                                    <text x="577" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">5</text>
+                                </g>
+                                <g>
+                                    <text x="50" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">6</text>
+                                    <text x="141" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">7</text>
+                                    <text x="229" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">8</text>
+                                    <text x="315" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">9</text>
+                                    <text x="398" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">10</text>
+                                    <text x="477" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">11</text>
+                                    <text x="570" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">12</text>
+                                </g>
+                                <g>
+                                    <text x="43" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">13</text>
+                                    <text x="134" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">14</text>
+                                    <text x="221" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">15</text>
+                                    <text x="309" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">16</text>
+                                    <text x="399" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">17</text>
+                                    <text x="477" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">18</text>
+                                    <text x="571" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">19</text>
+                                </g>
+                                <g>
+                                    <text x="43" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">20</text>
+                                    <text x="134" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">21</text>
+                                    <text x="221" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">22</text>
+                                    <text x="309" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">23</text>
+                                    <text x="399" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">24</text>
+                                    <text x="477" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">25</text>
+                                    <text x="571" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">26</text>
+                                </g>
+                                <g>
+                                    <text x="43" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">27</text>
+                                    <text x="134" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">28</text>
+                                    <text x="221" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">29</text>
+                                    <text x="309" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">30</text>
+                                    <text x="399" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">31</text>
+                                    <text x="475" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+                                    <text x="570" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+                                </g>
+                            </svg>
+                        </svg>
+
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Important Notes （Adult 13+）</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-2 top-note">
+                        <h2>Duration</h2>
+                        <p>2 hours</p>
+
+                    </div>
+                    <div class="mt-4 top-note">
+                        <h2>Cancellation Policy</h2>
+                        <p>Cancel before 12:00 AM on 31 July 2022 for full refund</p>
+                    </div>
+                    <div class="mt-4 top-note">
+                        <h2>Meeting Point</h2>
+                        <p>Jewel Changi Airport,78 Airport Blvd, Singapore 81966</p>
+                        <p>Open in Google maps ></p>
+                    </div>
+                    <div class="mt-4 top-note">
+                        <h2>Inclusions</h2>
+                        <div class="note-tik">
+                            <img src="./assets/tik.png" alt="">
+                            <p class="mb-0">Admission Ticket for SkyPark Observation Deck</p>
+                        </div>
+                        <div class="note-tik">
+                            <img src="./assets/tik.png" alt="">
+                            <p class="mb-0">Admission Ticket for SkyPark Observation Deck</p>
+                        </div>
+                        <div class="note-tik">
+                            <img src="./assets/tik.png" alt="">
+                            <p class="mb-0">Admission Ticket for SkyPark Observation Deck</p>
+                        </div>
+                        <div class="note-tik">
+                            <img src="./assets/cross.png" alt="">
+                            <p class="mb-0">Admission Ticket for SkyPark Observation Deck</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 top-note">
+                        <h2>Redemption Rules</h2>
+                        <p>Please present this ticket directly at entrance of SkyPark for admission.</p>
+
+                    </div>
+                    <div class="mt-4 top-note">
+                        <h2>How To Use</h2>
+                        <p>Please present this ticket directly at entrance of SkyPark for admission.</p>
+
+                    </div>
+                    <div class="mt-4 top-note">
+                        <h2>Important Information</h2>
+                        <p>- SkyPark Observation Deck from 9th June to 2nd July will close earlier every Thursday,
+                            Friday, and Saturday at 7.30 pm. 10th June at 6 pm due to a private screening with a special
+                            guest appearance.
+
+                            - Guests will not be able to access the deck. The last entry for guests to enter SkyPark
+                            Observation Deck will be at:
+                            7.20pm (Every Thursday, Friday, Saturday)
+                            5.50pm (10th June, Friday)
+
+                            - SkyPark Observation Deck will close earlier for a private event on Friday 10 June 2022
+                            From 6 pm till late. The last visiting time at 5.50 pm, after which guests will not be able
+                            to access the deck.
+
+                            - Observation Deck will resume its normal operation on Wednesday, 25th May 2022 at 11am.
+
+                            - Please note that Marina Bay Sands SkyPark will be closed at 6pm for SKYPARK YOGA BY VIRGIN
+                            ACTIVE every Wednesday and Thursday from 20 July 2021 onward.
+
+                            - Location of Magic Shot/Photos taken:
+
+                            - SkyPark: Queue Line @ Level B1. * The magic shot is a GIF with animated background/effect
+                            added to the photo taken.</p>
+
+                    </div>
+                    <div class="mt-4 top-note">
+                        <h2>Additional Information </h2>
+                        <p>SkyPark Observation Deck from 9th June to 2nd July will close earlier every Thursday, Friday,
+                            and Saturday at 7.30 pm. 10th June at 6 pm due to a private screening with a special guest
+                            appearance.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Activity Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="preference-div">
+                        <h2>Burj Khalifa, At the Top +Cafe</h2>
+                        <h3>Burj Khalifa, At the Top SKY
+                            Underwater Zoo and The Aquarium</h3>
+                    </div>
+                    <div class="preference-bottom">
+                        <h2>The Burj Khalifa (known as the Burj Dubai prior
+                            to its inauguration in 2010) is a skyscraper in
+                            Dubai, United Arab Emirates. It is the world's
+                            tallest building. With a total height of 829.8m
+                            (2,722 ft, or just over half a mile) and a roof
+                            height (excluding antenna, but including a
+                            242.6 m spire[2]) of 828 m (2,717 ft), the
+                            Burj Khalifa has been the tallest structure
+                            and building in the world since its topping out
+                            in 2009, supplanting Taipei 101, the previous
+                            holder of that status.[3][4]</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Burj Khalifa, At the Top +Cafe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="available-dates mt-4">
+                        <h2>Next available dates</h2>
+
+
+                        <div class="date-available">
+                            <div class="date-content">
+                                <p class="mb-0">14 Jun</p>
+                                <p class="mb-0">Today</p>
+                            </div>
+                            <div class="date-content">
+                                <p class="mb-0">14 Jun</p>
+                                <p class="mb-0">Today</p>
+                            </div>
+                            <div class="date-content">
+                                <p class="mb-0">14 Jun</p>
+                                <p class="mb-0">Today</p>
+                            </div>
+                            <div class="date-content">
+                                <p class="mb-0">14 Jun</p>
+                                <p class="mb-0">Today</p>
+                            </div>
+
+                            <div class="date-content" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
+                                    src="./assets/calendar (1).png" alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="available-cafe mt-4">
+                        <h2>Available on Fri, 11 Aug</h2>
+
+                        <div class="cafe-name">
+                            <div class="cafe-top">
+                                <h2 class="mb-0">Burj Khalifa, At The Top SKY</h2>
+                            </div>
+                            <h3>Ride the worlds fastest elevator (10 meters
+                                per second) to the observatory deck of the...</h3>
+                            <h4 data-bs-toggle="modal" data-bs-target="#exampleModal2">More details</h4>
+
+                            <div class="d-flex cafe-bottom">
+                                <div class="cafe-bottom-price">
+                                    <p>From </p>
+                                    <span>AED 6000</span>
+                                    <strike>AED 10000</strike>
+                                </div>
+                                <div class="select-btn">
+                                    <p class="mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal5">Select</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cafe-name mt-4">
+                            <div class="cafe-top">
+                                <h2 class="mb-0">Burj Khalifa, At The Top SKY</h2>
+                            </div>
+                            <h3>Ride the worlds fastest elevator (10 meters
+                                per second) to the observatory deck of the...</h3>
+                                <h4 data-bs-toggle="modal" data-bs-target="#exampleModal2">More details</h4>
+
+                            <div class="d-flex cafe-bottom">
+                                <div class="cafe-bottom-price">
+                                    <p>From </p>
+                                    <span>AED 6000</span>
+                                    <strike>AED 10000</strike>
+                                </div>
+                                <div class="select-btn">
+                                    <p class="mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal5">Select</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cafe-name mt-4">
+                            <div class="cafe-top">
+                                <h2 class="mb-0">Burj Khalifa, At The Top SKY</h2>
+                            </div>
+                            <h3>Ride the worlds fastest elevator (10 meters
+                                per second) to the observatory deck of the...</h3>
+                                <h4 data-bs-toggle="modal" data-bs-target="#exampleModal2">More details</h4>
+
+                            <div class="d-flex cafe-bottom">
+                                <div class="cafe-bottom-price">
+                                    <p>From </p>
+                                    <span>AED 6000</span>
+                                    <strike>AED 10000</strike>
+                                </div>
+                                <div class="select-btn">
+                                    <p class="mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal5">Select</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Dates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <svg width="300px" height="400px" preserveAspectRatio="xMinYMin meet"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg>
+                            <rect x="10" y="10" height="377" width="640" style="fill: #fff;" />
+                            <rect x="30" y="70" rx="5" ry="5" height="33" width="600" style="fill: #28ACE2" />
+                            <text id="month_name" x="300" y="50" fill="#f6861f"
+                                style="font-size:22px; font-family: Arial; font-weight:bold;"></text>
+                            <rect x="45" y="159" rx="5" ry="5" height="33" width="40" style="fill: #28ACE2" />
+                            <svg x="10" y="70">
+                                <g>
+                                    <text x="35" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">MON</text>
+                                    <text x="126" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">TUE</text>
+                                    <text x="216" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">WED</text>
+                                    <text x="304" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">THU</text>
+                                    <text x="396" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">FRI</text>
+                                    <text x="473" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">SAT</text>
+                                    <text x="560" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">SUN</text>
+                                </g>
+                            </svg>
+                            <svg x="10" y="120">
+                                <g>
+                                    <text x="49" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+                                    <text x="141" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+                                    <text x="230" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">1</text>
+                                    <text x="317" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">2</text>
+                                    <text x="405" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">3</text>
+                                    <text x="482" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">4</text>
+                                    <text x="577" y="24"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">5</text>
+                                </g>
+                                <g>
+                                    <text x="50" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">6</text>
+                                    <text x="141" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">7</text>
+                                    <text x="229" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">8</text>
+                                    <text x="315" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">9</text>
+                                    <text x="398" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">10</text>
+                                    <text x="477" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">11</text>
+                                    <text x="570" y="63"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">12</text>
+                                </g>
+                                <g>
+                                    <text x="43" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">13</text>
+                                    <text x="134" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">14</text>
+                                    <text x="221" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">15</text>
+                                    <text x="309" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">16</text>
+                                    <text x="399" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">17</text>
+                                    <text x="477" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">18</text>
+                                    <text x="571" y="104"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">19</text>
+                                </g>
+                                <g>
+                                    <text x="43" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">20</text>
+                                    <text x="134" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">21</text>
+                                    <text x="221" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">22</text>
+                                    <text x="309" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">23</text>
+                                    <text x="399" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">24</text>
+                                    <text x="477" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">25</text>
+                                    <text x="571" y="145"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">26</text>
+                                </g>
+                                <g>
+                                    <text x="43" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">27</text>
+                                    <text x="134" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">28</text>
+                                    <text x="221" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">29</text>
+                                    <text x="309" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">30</text>
+                                    <text x="399" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;">31</text>
+                                    <text x="475" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+                                    <text x="570" y="186"
+                                        style="fill: #444; font-size:20px; font-family: Arial; font-weight:bold;"></text>
+                                </g>
+                            </svg>
+                        </svg>
+
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Your Preference</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              <div class="modal-body">
+                <div class="preference-div">
+                    <h2>Burj Khalifa, At the Top +Cafe</h2>
+                    <h3>Burj Khalifa, At the Top  SKY</h3>
+
+                    <div class="preference-div-bottom mt-4">
+                        <h2>Fri,  11 Aug</h2>
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/edit 1.png" alt="">
+                            <h3 class="mb-0">Edit date</h3>
+                        </div>                    
+                    </div>
+                </div>
+
+               <div class="select-price">
+                <div class="mt-4 d-flex align-items-center g-1">
+                    <img src="./assets/Shape.png" alt="">
+                    <p class="mb-0"> Instant Tickets</p>
+                </div>
+                <div class="mt-4 d-flex align-items-center">
+                    <img src="./assets/Shape (1).png" alt="">
+                    <p class="mb-0"> Instant Tickets</p>
+                </div>
+                <div class="mt-4 d-flex align-items-center">
+                    <img src="./assets/Shape (2).png" alt="">
+                    <p class="mb-0"> Instant Tickets</p>
+                </div>
+              
+               </div>
+
+               <div class="select-time mt-4">
+                <h2>Time Slots</h2>
+                <div class="time-slot-select">
+                   <div class="time-slot-select-div">
+                    <p class="mb-0">1.00 pm</p>
+                   </div>
+                   <div class="time-slot-select-div">
+                    <p class="mb-0">1.00 pm</p>
+                   </div>
+                   <div class="time-slot-select-div">
+                    <p class="mb-0">1.00 pm</p>
+                   </div>
+                   <div class="time-slot-select-div">
+                    <p class="mb-0">1.00 pm</p>
+                   </div>
+              
+                  
+                  
+                </div>
+
+             <div class="show-more mt-4">
+                <h2>Show more</h2>
+             </div>
+               </div>
+
+               <div class="tity mt-4">
+                <h2>Quantity</h2>
+
+                <div class="div">
+                    <div>
+                        <h3>Child (4-12 Years old)</h3>
+                        <p data-bs-toggle="modal" data-bs-target="#exampleModal1">Important Notes</p>
+                        <h4>AED 125.85</h4>
+                    </div>
+                    <div class="tity-price">
+                       <img src="./assets/minus-sign.png" alt="">
+                       <p class="mb-0">1</p>
+                       <img src="./assets/plus (1).png" alt="">
+                    </div>
+                </div>
+                <div class="div mt-4">
+                    <div>
+                        <h3>Child (4-12 Years old)</h3>
+                        <p data-bs-toggle="modal" data-bs-target="#exampleModal1">Important Notes</p>
+                        <h4>AED 125.85</h4>
+                    </div>
+                    <div class="tity-price">
+                       <img src="./assets/minus-sign.png" alt="">
+                       <p class="mb-0">1</p>
+                       <img src="./assets/plus (1).png" alt="">
+                    </div>
+                </div>
+               </div>
+              
+               <div class="total-price-checkout mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Total</h2>
+                    <h3>AED 600</h3>
+                </div>
+                <div class="checkout">
+                    <p>Checkout</p>
+                </div>
+               </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.onload = function () {
+            showMonth();
+        };
+
+        function showMonth() {
+            var month = new Array();
+            month[0] = "January";
+            month[1] = "February";
+            month[2] = "March";
+            month[3] = "April";
+            month[4] = "May";
+            month[5] = "June";
+            month[6] = "July";
+            month[7] = "August";
+            month[8] = "September";
+            month[9] = "October";
+            month[10] = "November";
+            month[11] = "December";
+            var d = new Date();
+            var n = month[d.getMonth()];
+            document.getElementById("month_name").innerHTML = n;
+        }
+    </script>
+</body>
+
+</html>
