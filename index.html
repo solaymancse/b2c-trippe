@@ -14,6 +14,13 @@
         integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+     <!-- custom swiper CSS -->
+     <link rel="stylesheet" href="./css/swiper.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,54 +29,179 @@
     <title>Ptoduct Page</title>
 </head>
 
-<div class="nav_pc_nor">
+    <div class="nav_pc_nor">
 
-    <div class="logo-div">
-        <img src="./assets/logo.png" alt="">
+        <div class="logo-div">
+            <img src="./assets/logo.png" alt="">
+        </div>
+        <div class="nav-item">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass" style="color: #444444;"></i>
+            </div>
+            <div class="language">
+                <i class="fa-solid fa-globe" style="color: #444444;"></i>
+               
+                
+                  <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                    <option selected>English</option>
+                    <option value="1">Bangla</option>
+                    <option value="1">Hindi</option>
+                   
+                  </select>
+            </div>
+            <div class="currency">
+                <img src="./assets/currency.png" alt="">
+                <h2 class="mb-0"></h2>
+    
+                  <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                    <option selected>AED</option>
+                    <option value="1">Taka</option>
+                   
+                  </select>
+            </div>
+            <div class="contact">
+                <h2 class="mb-0">Contact Us</h2>
+            </div>
+            <div class="toggle d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <img src="./assets/toggle.png" alt="">
+            </div>
+    
+            
+    
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  
+                    <div class="d-flex align-items-center">
+                      
+                       <img src="./assets/Vector.png" alt="" style="width: 16px; height: 16px;">
+                        
+                          <select class="form-select form-select-lg" aria-label=".form-select-sm example" style="width: 115px; border:none;">
+                            <option selected>English</option>
+                            <option value="1">Bangla</option>
+                            <option value="1">Hindi</option>
+                           
+                          </select>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/currency.png" alt="" style="width: 16px; height: 16px;">
+                        <h2 class="mb-0"></h2>
+            
+                          <select class="form-select form-select-lg" aria-label=".form-select-sm example"style="width: 100px; border:none;">
+                            <option selected>AED</option>
+                            <option value="1">Taka</option>
+                           
+                          </select>
+                    </div>
+                    <div class="mt-3">
+                        <h2 class="mb-0">Contact Us</h2>
+                    </div>
+                </div>
+              </div>
+    
+        </div>
+    
+    
     </div>
-    <div class="nav-item">
-        <div class="search-bar">
-            <img src="./assets/search-icon.png" alt="">
-        </div>
-        <div class="language">
-            <img src="./assets/Vector.png" alt="">
-            <h2 class="mb-0">English</h2>
-        </div>
-        <div class="currency">
-            <img src="./assets/currency.png" alt="">
-            <h2 class="mb-0">AED</h2>
-        </div>
-        <div class="contact">
-            <h2 class="mb-0">Contact Us</h2>
-        </div>
-        <div class="toggle">
-            <img src="./assets/toggle.png" alt="">
-        </div>
 
-    </div>
-
-
-</div>
 
 <div class="container-div hero-section">
-    <div class="img-div">
-        <img src="./assets/banner1.png" alt="">
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="slider-div d-flex">
+            <div class="slider-1">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+            <div class="slider-2">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+            <div class="slider-3">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+        </div>
+  
+      </div>
+      <div class="swiper-slide">
+        <div class="slider-div d-flex">
+            <div class="slider-1">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+            <div class="slider-2">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+            <div class="slider-3">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+        </div>
+  
+      </div>
+      <div class="swiper-slide">
+        <div class="slider-div d-flex">
+            <div class="slider-1">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+            <div class="slider-2">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+            <div class="slider-3">
+                <img src="./assets/banner1.png" alt="">
+            </div>
+        </div>
+  
+      </div>
+
     </div>
-    <div class="img-div">
-        <img src="./assets/banner1.png" alt="">
-    </div>
-    <div class="img-div">
-        <img src="./assets/banner1.png" alt="">
-    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+  </div>
 
 
+    
+</div>
+<div class="container-div  mobile-swiper">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./assets/banner1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/banner1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/banner1.png" alt="">
+          </div>
+        
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev d-none"></div>
+        <div class="swiper-button-next d-none"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar d-none"></div>
+      </div>
+
+
+    
 </div>
 
 <section class="container-div hero-content">
 
     <div class="left-div">
         <div class="heading">
-            <h1>The exclusive luxy bag wita as Watch phone lip stick </br> and Watch phone lip</h1>
+            <h1>The exclusive luxy bag wita as Watch phone lip stick and Watch phone lip</h1>
         </div>
         <div class="rating">
             <div>
@@ -118,11 +250,11 @@
                 <img src="./assets/loc.png" alt="">
                 <div class="map-content">
                     <div class="left-content">
-                        <i class="fa-sharp fa-solid fa-location-dot" style="color: #444444; font-size: 30px;"></i>
-                        <h2>Port de la Bourdonnais, 29482, Paris Port de la Bourdonnais, 29482, <br /> Paris</h2>
+                        <i class="fa-sharp fa-solid fa-location-dot left-icon" style="color: #444444;"></i>
+                        <h2>Port de la Bourdonnais, 29482, Paris Port de la Bourdonnais, 29482, Paris</h2>
                     </div>
                     <div class="right-content">
-                        <i class="fa-sharp fa-solid fa-location-dot" style="color: #f6861f; font-size: 45px;"></i>
+                        <i class="fa-sharp fa-solid fa-location-dot right-icon" style="color: #f6861f;"></i>
                         <h3>View Map</h3>
                     </div>
                 </div>
@@ -155,7 +287,7 @@
                             <h1>Exclusions</h1>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
                         aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
                             <p>1 ticket and 1 Toy 1 ticket and 1 Toy 1 ticket and 1 Toy</p>
@@ -397,11 +529,11 @@
 <section class="container-div card-div">
     <h1>More Like This </h1>
 
-    <div class="card-item-div " style="width: 94%;">
+    <div class="card-item-div ">
         <div>
             <div class="card">
                 <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
+                <div class="card-body" >
                     <h5 class="card-title">Example of Zoo
                         category</h5>
                     <p class="card-text">Refund with cond | 599-20</p>
@@ -421,7 +553,7 @@
         <div>
             <div class="card">
                 <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
+                <div class="card-body" >
                     <h5 class="card-title">Example of Zoo
                         category</h5>
                     <p class="card-text">Refund with cond | 599-20</p>
@@ -441,7 +573,7 @@
         <div>
             <div class="card">
                 <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
+                <div class="card-body" >
                     <h5 class="card-title">Example of Zoo
                         category</h5>
                     <p class="card-text">Refund with cond | 599-20</p>
@@ -461,7 +593,7 @@
         <div>
             <div class="card">
                 <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
+                <div class="card-body" >
                     <h5 class="card-title">Example of Zoo
                         category</h5>
                     <p class="card-text">Refund with cond | 599-20</p>
@@ -481,7 +613,7 @@
         <div>
             <div class="card">
                 <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
+                <div class="card-body" >
                     <h5 class="card-title">Example of Zoo
                         category</h5>
                     <p class="card-text">Refund with cond | 599-20</p>
@@ -501,7 +633,7 @@
         <div>
             <div class="card">
                 <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
+                <div class="card-body">
                     <h5 class="card-title">Example of Zoo
                         category</h5>
                     <p class="card-text">Refund with cond | 599-20</p>
@@ -517,133 +649,131 @@
                     </div>
                 </div>
             </div>
-
         </div>
+       
+            <div>
+                <div class="card">
+                    <img src="./assets/default_bg.png" class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title">Example of Zoo
+                            category</h5>
+                        <p class="card-text">Refund with cond | 599-20</p>
+                        <div class="card-review">
+                            <h2 class="mb-0">4.4</h2>
+                            <img src="./assets/star.png" alt="">
+                            <p class="mb-0">(6,302)</p>
+                        </div>
+                        <div class="card-price">
+                            <span>AED</span>
+                            <p class="mb-0">255</p>
+                            <strike>AED 556</strike>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="./assets/default_bg.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Example of Zoo
+                            category</h5>
+                        <p class="card-text">Refund with cond | 599-20</p>
+                        <div class="card-review">
+                            <h2 class="mb-0">4.4</h2>
+                            <img src="./assets/star.png" alt="">
+                            <p class="mb-0">(6,302)</p>
+                        </div>
+                        <div class="card-price">
+                            <span>AED</span>
+                            <p class="mb-0">255</p>
+                            <strike>AED 556</strike>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="./assets/default_bg.png" class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title">Example of Zoo
+                            category</h5>
+                        <p class="card-text">Refund with cond | 599-20</p>
+                        <div class="card-review">
+                            <h2 class="mb-0">4.4</h2>
+                            <img src="./assets/star.png" alt="">
+                            <p class="mb-0">(6,302)</p>
+                        </div>
+                        <div class="card-price">
+                            <span>AED</span>
+                            <p class="mb-0">255</p>
+                            <strike>AED 556</strike>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="./assets/default_bg.png" class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title">Example of Zoo
+                            category</h5>
+                        <p class="card-text">Refund with cond | 599-20</p>
+                        <div class="card-review">
+                            <h2 class="mb-0">4.4</h2>
+                            <img src="./assets/star.png" alt="">
+                            <p class="mb-0">(6,302)</p>
+                        </div>
+                        <div class="card-price">
+                            <span>AED</span>
+                            <p class="mb-0">255</p>
+                            <strike>AED 556</strike>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="./assets/default_bg.png" class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title">Example of Zoo
+                            category</h5>
+                        <p class="card-text">Refund with cond | 599-20</p>
+                        <div class="card-review">
+                            <h2 class="mb-0">4.4</h2>
+                            <img src="./assets/star.png" alt="">
+                            <p class="mb-0">(6,302)</p>
+                        </div>
+                        <div class="card-price">
+                            <span>AED</span>
+                            <p class="mb-0">255</p>
+                            <strike>AED 556</strike>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="./assets/default_bg.png" class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title">Example of Zoo
+                            category</h5>
+                        <p class="card-text">Refund with cond | 599-20</p>
+                        <div class="card-review">
+                            <h2 class="mb-0">4.4</h2>
+                            <img src="./assets/star.png" alt="">
+                            <p class="mb-0">(6,302)</p>
+                        </div>
+                        <div class="card-price">
+                            <span>AED</span>
+                            <p class="mb-0">255</p>
+                            <strike>AED 556</strike>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
     </div>
-
-    <div class="card-item-div mt-4" style="width: 94%;">
-        <div>
-            <div class="card">
-                <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
-                    <h5 class="card-title">Example of Zoo
-                        category</h5>
-                    <p class="card-text">Refund with cond | 599-20</p>
-                    <div class="card-review">
-                        <h2 class="mb-0">4.4</h2>
-                        <img src="./assets/star.png" alt="">
-                        <p class="mb-0">(6,302)</p>
-                    </div>
-                    <div class="card-price">
-                        <span>AED</span>
-                        <p class="mb-0">255</p>
-                        <strike>AED 556</strike>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="card">
-                <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
-                    <h5 class="card-title">Example of Zoo
-                        category</h5>
-                    <p class="card-text">Refund with cond | 599-20</p>
-                    <div class="card-review">
-                        <h2 class="mb-0">4.4</h2>
-                        <img src="./assets/star.png" alt="">
-                        <p class="mb-0">(6,302)</p>
-                    </div>
-                    <div class="card-price">
-                        <span>AED</span>
-                        <p class="mb-0">255</p>
-                        <strike>AED 556</strike>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="card">
-                <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
-                    <h5 class="card-title">Example of Zoo
-                        category</h5>
-                    <p class="card-text">Refund with cond | 599-20</p>
-                    <div class="card-review">
-                        <h2 class="mb-0">4.4</h2>
-                        <img src="./assets/star.png" alt="">
-                        <p class="mb-0">(6,302)</p>
-                    </div>
-                    <div class="card-price">
-                        <span>AED</span>
-                        <p class="mb-0">255</p>
-                        <strike>AED 556</strike>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="card">
-                <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
-                    <h5 class="card-title">Example of Zoo
-                        category</h5>
-                    <p class="card-text">Refund with cond | 599-20</p>
-                    <div class="card-review">
-                        <h2 class="mb-0">4.4</h2>
-                        <img src="./assets/star.png" alt="">
-                        <p class="mb-0">(6,302)</p>
-                    </div>
-                    <div class="card-price">
-                        <span>AED</span>
-                        <p class="mb-0">255</p>
-                        <strike>AED 556</strike>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="card">
-                <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
-                    <h5 class="card-title">Example of Zoo
-                        category</h5>
-                    <p class="card-text">Refund with cond | 599-20</p>
-                    <div class="card-review">
-                        <h2 class="mb-0">4.4</h2>
-                        <img src="./assets/star.png" alt="">
-                        <p class="mb-0">(6,302)</p>
-                    </div>
-                    <div class="card-price">
-                        <span>AED</span>
-                        <p class="mb-0">255</p>
-                        <strike>AED 556</strike>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="card">
-                <img src="./assets/default_bg.png" class="card-img-top" alt="...">
-                <div class="card-body" style="height: 134px;">
-                    <h5 class="card-title">Example of Zoo
-                        category</h5>
-                    <p class="card-text">Refund with cond | 599-20</p>
-                    <div class="card-review">
-                        <h2 class="mb-0">4.4</h2>
-                        <img src="./assets/star.png" alt="">
-                        <p class="mb-0">(6,302)</p>
-                    </div>
-                    <div class="card-price">
-                        <span>AED</span>
-                        <p class="mb-0">255</p>
-                        <strike>AED 556</strike>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+   
 
 
 
@@ -664,8 +794,8 @@
 
         <div>
             <h2>About</h2>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
+            <p data-bs-toggle="modal" data-bs-target="#exampleModal6" style="cursor: pointer;">Terms & Conditions</p>
+            <p data-bs-toggle="modal" data-bs-target="#exampleModal7" style="cursor: pointer;">Privacy Policy</p>
         </div>
 
         <div>
@@ -685,6 +815,68 @@
 
 
 </section>
+
+<section class="mobile-view-book-now-bottom">
+<div class="mobile-view-book-now-bottom-content">
+    <div>
+        <p class="mb-0">From</p>
+        <span>AED 600</span>
+    </div>
+   
+        <button ><a href="/book.html">BOOK NOW</a></button>
+    
+</div>
+</section>
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+           <div class="modal-body">
+            <h3 class="mt-4">Terms and Conditions Sample Generator</h3>
+             <p class="mt-4">Help protect your website and its users with clear and fair website terms and conditions. These terms and conditions for a website set out key issues such as acceptable use, privacy, cookies, registration and passwords, intellectual property, links to other sites, termination and disclaimers of responsibility. Terms and conditions are used and necessary to protect a website owner from liability of a user relying on the information or the goods provided from the site then suffering a loss.
+
+                Making your own terms and conditions for your website is hard, not impossible, to do. It can take a few hours to few days for a person with no legal background to make. But worry no more; we are here to help you out.
+                
+                All you need to do is fill up the blank spaces and then you will receive an email with your personalized terms and conditions.</p>
+           </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg mt-4">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+           <div class="modal-body">
+            <h3 class="mt-4">Privacy & Policy</h3>
+             <p class="mt-4">Help protect your website and its users with clear and fair website terms and conditions. These terms and conditions for a website set out key issues such as acceptable use, privacy, cookies, registration and passwords, intellectual property, links to other sites, termination and disclaimers of responsibility. Terms and conditions are used and necessary to protect a website owner from liability of a user relying on the information or the goods provided from the site then suffering a loss.
+
+                Making your own terms and conditions for your website is hard, not impossible, to do. It can take a few hours to few days for a person with no legal background to make. But worry no more; we are here to help you out.
+                
+                All you need to do is fill up the blank spaces and then you will receive an email with your personalized terms and conditions.</p>
+           </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/book_now.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>
