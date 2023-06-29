@@ -27,6 +27,7 @@ var prices = [
 ];
 
 var totalElement = document.getElementById("total");
+var totalElement1 = document.getElementById("total1");
 var finalTotalElement = document.getElementById("finalTotal");
 var initialPrice = -76;
 
@@ -58,6 +59,7 @@ function calculateTotal() {
     }
     total += initialPrice;
     totalElement.innerText = "AED " + total.toFixed(2);
+    totalElement1.innerText = "AED " + total.toFixed(2);
     finalTotalElement.innerText = "AED " + total.toFixed(2);
 }
 

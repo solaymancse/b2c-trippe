@@ -32,6 +32,9 @@ html {
     padding-left: 5px;
     cursor: pointer;
 }
+.form-select-lg {
+    font-size: 16px !important;
+}
 
 .currency .form-select option,
 .language .form-select option {
@@ -46,7 +49,7 @@ html {
 }
 
 .currency .form-select:focus,
-.language .form-select:focus {
+.language .form-select:focus , .offcanvas-body .form-select:focus{
     box-shadow: none;
 
 }
@@ -63,7 +66,7 @@ html {
     background: #FFFFFF;
     border-bottom: 1px solid #EEEEEE;
     position: fixed;
-    z-index: 9999;
+    z-index: 2;
     top: 0;
 
 }
@@ -259,12 +262,7 @@ html {
 
 }
 
-@media (max-width: 991px) {
-    .hero-section {
-        display: none;
-    }
 
-}
 
 
 /*Hero Content */
@@ -297,6 +295,7 @@ html {
 
 }
 
+
 .hero-heading h1 {
     font-weight: 600px;
     font-size: 30px;
@@ -309,12 +308,12 @@ html {
 .book-now {
     position: absolute;
 
-    top: 0;
+    top: 0px;
     right: 120px;
     width: 25%;
     /* Other styles for the book-now div */
    
-    z-index: 9999;
+    
 
 }
 
@@ -414,15 +413,59 @@ html {
     border: 1px solid #EEEEEE;
     border-top-color: #28ACE2;
     border-top-width: 6px;
-
     border-radius: 0px 0px 4px 4px;
     display: flex;
     flex-direction: column;
-
-
-
-
 }
+.mobile-view-total{
+   position: fixed;
+   bottom: 0;
+width: 100%;
+padding: 10px 20px;
+background-color: #fff;
+display: flex;
+flex-direction: column;
+box-shadow: rgba(0, 0, 0, 0.2) 0px -25px 20px -20px;
+
+    
+}
+.mobile-view-total p{
+color: #444444;
+font-weight: 600;
+margin-right: 10px;
+margin-top: 10px;
+
+
+    
+}
+.mobile-view-total strike{
+color: #444444;
+font-weight: normal;
+margin-top: 10px;
+
+
+    
+}
+#total1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #CD0A00;
+    margin-right: 10px;
+}
+.mobile-view-total a{
+    background-color: #28ACE2;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    margin-top: 12px;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 0px;
+    border-radius: 5px;
+    
+}
+
 
 .price {
     display: flex;
@@ -486,6 +529,7 @@ html {
     margin-top: 12px;
 }
 
+
 .book-now .bottom {
     width: 100%;
 
@@ -524,7 +568,7 @@ html {
     align-items: center;
     height: 45px;
     padding: 0px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .why img {
@@ -554,6 +598,7 @@ html {
 .rating {
     margin-top: 20px;
     display: flex;
+    flex-direction: row;
     gap: 10px;
     align-items: center;
 }
@@ -585,8 +630,6 @@ html {
 
 .coupon-div {
     position: relative;
-
-
 }
 
 .eclipse1 {
@@ -643,18 +686,20 @@ html {
 .ticket_section {
     width: 100%;
     margin-top: 25px;
+    display: none;
 }
 
 .tickets {
     display: flex;
-    gap: 67px;
+    flex-direction: row;
+    gap: 20px;
 }
 
-.ticket-1 {
+.ticket-1 , .ticket-2 , .ticket-3 ,.ticket-4{
     display: flex;
-    gap: 11px;
+    gap: 5px;
     align-items: center;
-    width: 163px;
+    
 }
 
 .ticket-1 img {
@@ -662,12 +707,6 @@ html {
     height: 18px;
 }
 
-.ticket-2 {
-    display: flex;
-    gap: 11px;
-    align-items: center;
-    width: 163px;
-}
 
 .ticket-2 img {
     width: 19px;
@@ -688,7 +727,7 @@ html {
     display: flex;
     gap: 14px;
     align-items: center;
-    width: 221px;
+  
 }
 
 .ticket-3 img {
@@ -696,13 +735,6 @@ html {
     height: 20px;
 }
 
-.ticket-4 {
-    display: flex;
-    gap: 11px;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-}
 
 .ticket-4 img {
     width: 24px;
@@ -871,11 +903,7 @@ html {
         padding: 0px 20px;
     }
 
-    .hero-content .ticket_section {
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-    }
+
 
     .ticket-4 img {
 
@@ -894,13 +922,8 @@ html {
         width: 100%;
     }
 
-    .ticket_section .tickets {
-        gap: 20px;
-    }
 
-    .rating {
-        flex-direction: column;
-    }
+
 
     .hero-content .heading h1 {
 
@@ -913,6 +936,9 @@ html {
 
 
     }
+    .ticket_section{
+        display: block;
+    }
 
 }
 
@@ -920,8 +946,15 @@ html {
     .book-now {
         display: block;
     }
+    .ticket_section{
+        display: block;
+    }
+    .mobile-view-total{
+        display: none;
+    }
 
 }
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .book-now {
@@ -935,6 +968,14 @@ html {
     .ticket-4 {
         justify-content: center;
     }
+    .ticket_section{
+        display: block;
+    }
+    .book-now1 .top1 {
+        display: none;
+ 
+     }
+
 
 }
 
@@ -1008,25 +1049,28 @@ html {
     .ticket-4 {
         justify-content: center;
     }
+    .book-now1 .top1 {
+        display: none;
+ 
+     }
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
+    .hero-section{
+        margin-top: 0px;
+    }
     .hero-content {
-        padding: 0px 20px;
+        padding: 0px 15px;
         flex-direction: column;
+        margin-top: 10px;
        
     }
 
     .hero-content .heading h1 {
-        font-size: 20px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-
-      
-      
+        font-size: 18px;
+        text-align: justify;
         line-height: 21px;
-        height: 56px;
+       
        
     }
 
@@ -1108,26 +1152,42 @@ html {
     }
 
     .book-now1 .top1 {
-        margin-top: 30px;
-
-
-
+       display: none;
 
     }
+    .rating {
+      
+        
+        gap: 5px;
+        
+    }
+    .rating i {
+    font-size: 14px;
+        
+    }
+    .rating p {
+    font-size: 12px;
+    width: 70px;
+        
+    }
+    
+.rating h2{
+    font-size: 16px;
+    width: 20px;
+}
+.coupon {
+   
+    width: 175px;
+    height: 30px;
+
+
+}
+.coupon span {
+    font-size: 10px;
+}
 
     .mobile-view-book-now-bottom {
         display: block;
-    }
-
-    .rating {
-        flex-direction: column;
-    }
-
-    .hero-content .tickets {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
     }
 
 }
@@ -1541,6 +1601,7 @@ html {
 .footer {
     background-color: #f8f8f8;
     padding: 30px 120px;
+    margin-top: 20px;
 
 }
 
@@ -1628,6 +1689,7 @@ html {
 
 .booking-body {
     display: flex;
+    margin: 30px 0px;
 }
 
 .booking-left {
@@ -1865,7 +1927,8 @@ html {
 
 .booking-right {
     width: 30%;
-
+   position: fixed;
+   right: 120px;
 }
 
 
@@ -1953,6 +2016,11 @@ html {
         }
         .price span p{
             font-size: 20px;
+        }
+        .booking-right {
+            width: 30%;
+           position: fixed;
+           right: 20px;
         }
 }
 
@@ -2049,8 +2117,7 @@ html {
     }
 
     .booking-right {
-        width: 100%;
-        margin-top: 30px;
+       display: none;
     }
     .header {margin-top: 120px;
        
@@ -2170,10 +2237,8 @@ html {
     }
 
     .booking-right {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+        display: none;
+     }
 
 }
 
@@ -2631,13 +2696,11 @@ html {
 
 
 /*modal*/
-.modal {
-    margin-top: 60px;
-}
+
 
 @media (min-width: 320px) and (max-width: 1440px) {
     .modal {
-        margin-top: 75px;
+      
         z-index: 999;
     }
     

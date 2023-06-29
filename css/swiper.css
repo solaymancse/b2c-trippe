@@ -1,7 +1,4 @@
-.mobile-swiper{
-    display: none;
-    width: 100%;
-}
+
 .swiper {
     width: 100%;
     height: 300px;
@@ -34,12 +31,42 @@ height: 100%;
 
   }
 
+/**/
 
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media (min-width: 320px) and (max-width: 991px ) {
-    .mobile-swiper{
-        display: block;
-    }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider2 .swiper-slide {
+  width: auto;
+}
+.slider2  {
+  margin-top: 20px;
+}
+.slider2  img{
+  width: 16px;
+  height: 16px;
+}
+.slider2  p, .ticket-3 p{
+  font-size: 14px;
   
+}
+
+@media screen and (min-width: 768px) {
+  .slider2{
+    display: none;
+  }
 }
